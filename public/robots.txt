@@ -1,0 +1,64 @@
+# =====================================================================
+# Grovi Studio — robots.txt (SEO Técnico & AI/LLM Crawlers)
+# Sitio oficial: https://grovi-studio.com
+# Archivos de contexto para LLMs / Agentes de IA:
+#   - https://grovi-studio.com/llms.txt
+#   - https://grovi-studio.com/robotllm.txt
+# =====================================================================
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Buscadores tradicionales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Bots de Inteligencia Artificial y Motores de Respuesta (GEO / AEO / LLMs)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemaps XML (Estructura unificada + compatibilidad Rank Math)
+Sitemap: https://grovi-studio.com/sitemap.xml
+Sitemap: https://grovi-studio.com/sitemap_index.xml
+
+# Contexto estructurado para LLMs (llms.txt / robotllm.txt)
+# https://grovi-studio.com/llms.txt
+# https://grovi-studio.com/robotllm.txt

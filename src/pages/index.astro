@@ -1,0 +1,8 @@
+---
+import WpLayout from '../layouts/WpLayout.astro';
+import { getHomePage } from '../utils/wpContent';
+
+const homePage = getHomePage();
+---
+
+<WpLayout item={homePage} />

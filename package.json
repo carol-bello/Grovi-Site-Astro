@@ -1,0 +1,16 @@
+{
+  "name": "grovi-site-astro",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Sitio web oficial de Grovi Studio en Astro — Growth Marketing, SEO, Paid Media, Datos e IA.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.5.0"
+  }
+}

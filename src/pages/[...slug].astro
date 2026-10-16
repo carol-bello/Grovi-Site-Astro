@@ -1,0 +1,23 @@
+---
+import WpLayout from '../layouts/WpLayout.astro';
+import { getAllNonHomeItems, type WpItem } from '../utils/wpContent';
+
+export async function getStaticPaths() {
+  const items = getAllNonHomeItems();
+  return items.map((item) => {
+    const cleanSlug = item.path.replace(/^\/+|\/+$/g, '');
+    return {
+      params: { slug: cleanSlug },
+      props: { item },
+    };
+  });
+}
+
+interface Props {
+  item: WpItem;
+}
+
+const { item } = Astro.props;
+---
+
+<WpLayout item={item} />
