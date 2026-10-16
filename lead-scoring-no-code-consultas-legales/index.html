@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="es-CO" prefix="og: https://ogp.me/ns#"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="profile" href="https://gmpg.org/xfn/11"><title>Lead scoring no-code para consultas legales de alto ticket</title><meta name="description" content="Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket... Estrategias de Growth Marketing B2B por Grovi Studio."><meta name="keywords" content="lead scoring para abogados"><meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"><link rel="canonical" href="https://grovi-studio.com/lead-scoring-no-code-consultas-legales/"><link rel="alternate" type="text/plain" title="LLMs Context" href="https://grovi-studio.com/llms.txt"><link rel="alternate" type="text/plain" title="Robot LLM Context" href="https://grovi-studio.com/robotllm.txt"><link rel="sitemap" type="application/xml" href="/sitemap.xml"><!-- Open Graph / Social --><meta property="og:locale" content="es_ES"><meta property="og:type" content="article"><meta property="og:title" content="Lead scoring no-code para consultas legales de alto ticket"><meta property="og:description" content="Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket... Estrategias de Growth Marketing B2B por Grovi Studio."><meta property="og:url" content="https://grovi-studio.com/lead-scoring-no-code-consultas-legales/"><meta property="og:site_name" content="Grovi Studio"><meta property="og:image" content="https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-logo-principal-1024x1024.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Lead scoring no-code para consultas legales de alto ticket"><meta name="twitter:description" content="Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket... Estrategias de Growth Marketing B2B por Grovi Studio."><!-- Favicons --><link rel="icon" href="https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul-150x150.png" sizes="32x32"><link rel="icon" href="https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul-300x300.png" sizes="192x192"><link rel="apple-touch-icon" href="https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul-300x300.png"><!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"><!-- WordPress & Astra Exact Stylesheets --><link rel="stylesheet" id="astra-theme-css-css" href="https://grovi-studio.com/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.14.0" media="all"><link rel="stylesheet" id="astra-theme-inline-local" href="/assets/css/astra-post-inline.css" media="all"><link rel="stylesheet" id="wp-block-library-css" href="https://grovi-studio.com/wp-includes/css/dist/block-library/style.min.css?ver=7.1.3" media="all"><link rel="stylesheet" id="global-styles-local" href="/assets/css/wp-global-styles.css" media="all"><!-- Grovi Global Header & Footer CSS (from grovi-header-footer-snippet.txt) --><style id="grovi-global-hf">
+      .site-header,#masthead,.ast-mobile-header-wrap,.ast-desktop-header,.site-footer,#colophon,.ast-small-footer,
+      .entry-content header.nav,.entry-content header.fixed,
+      .entry-content footer.foot,.entry-content footer.foot-stmt,.entry-content footer.contact-footer,
+      .entry-content footer.grovi-mega-footer,.entry-content footer.w-full{display:none!important}
+      .gx-h,.gx-f{--gx-base:#030f2b;--gx-blue:#2151f2;--gx-blue-h:#1a43d1;--gx-lila:#ab95f4;--gx-lima:#cae664;--gx-back:#f4f3ef;--gx-ink:#030f2b;--gx-soft:#434b63;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;box-sizing:border-box}
+      .gx-h *,.gx-f *{box-sizing:border-box}
+      .gx-h a,.gx-f a{text-decoration:none!important}
+      .gx-h ul,.gx-f ul{list-style:none;margin:0!important;padding:0!important}
+      .gx-wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+      /* HEADER */
+      .gx-h{position:sticky;top:0;z-index:999;background:rgba(244,243,239,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(3,15,43,.08)}
+      .gx-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+      .gx-logo{display:flex;align-items:center;flex:none}
+      .gx-logo img{height:44px!important;width:auto!important;max-width:none;display:block}
+      .gx-menu{display:flex;align-items:center;gap:30px}
+      .gx-menu > li{position:relative}
+      .gx-menu a,.gx-menu button{font:500 .98rem/1 "Poppins",system-ui,sans-serif;color:var(--gx-ink)!important;background:none;border:0;padding:10px 0;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+      .gx-menu a:hover,.gx-menu button:hover{color:var(--gx-blue)!important}
+      .gx-menu button svg{width:12px;height:12px;transition:transform .2s}
+      .gx-drop{position:absolute;top:100%;left:-18px;min-width:300px;background:#fff;border-radius:20px;padding:10px;box-shadow:0 24px 50px -24px rgba(3,15,43,.35);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .18s,transform .18s,visibility .18s}
+      .gx-has:hover .gx-drop,.gx-has:focus-within .gx-drop,.gx-has.open .gx-drop{opacity:1;visibility:visible;transform:none}
+      .gx-has:hover > button svg,.gx-has.open > button svg{transform:rotate(180deg)}
+      .gx-drop a{display:flex!important;justify-content:flex-start!important;text-align:left;gap:12px;align-items:flex-start;padding:12px!important;border-radius:14px;line-height:1.3!important}
+      .gx-drop a:hover{background:#f1edfd}
+      .gx-drop i{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-style:normal}
+      .gx-drop b{display:block;font-weight:600;font-size:.95rem;color:var(--gx-ink)}
+      .gx-drop small{display:block;font-size:.8rem;color:var(--gx-soft);margin-top:3px;font-weight:400}
+      .gx-cta{display:inline-flex;align-items:center;gap:.5em;background:var(--gx-blue);color:#fff!important;font:600 .95rem/1 "Poppins",system-ui,sans-serif;border-radius:999px;padding:.9em 1.4em;transition:background-color .18s,transform .18s;white-space:nowrap}
+      .gx-cta:hover{background:var(--gx-blue-h);transform:translateY(-2px)}
+      .gx-burger{display:none;width:44px;height:44px;border-radius:12px;border:0;background:var(--gx-base);cursor:pointer;align-items:center;justify-content:center}
+      .gx-burger span,.gx-burger span::before,.gx-burger span::after{display:block;width:18px;height:2px;background:#fff;border-radius:2px;position:relative;transition:transform .2s,background-color .2s}
+      .gx-burger span::before,.gx-burger span::after{content:"";position:absolute;left:0}
+      .gx-burger span::before{top:-6px}.gx-burger span::after{top:6px}
+      .gx-h.open .gx-burger span{background:transparent}
+      .gx-h.open .gx-burger span::before{transform:translateY(6px) rotate(45deg)}
+      .gx-h.open .gx-burger span::after{transform:translateY(-6px) rotate(-45deg)}
+      @media (max-width:980px){
+        .gx-bar{min-height:66px}
+        .gx-logo img{height:38px!important}
+        .gx-burger{display:inline-flex}
+        .gx-right .gx-cta{display:none}
+        .gx-nav{position:absolute;left:0;right:0;top:100%;background:var(--gx-back);border-bottom:1px solid rgba(3,15,43,.08);padding:8px clamp(16px,4vw,40px) 22px;display:none!important;max-height:calc(100vh - 66px);overflow:auto}
+        .gx-h.open .gx-nav{display:block!important}
+        .gx-menu{flex-direction:column;align-items:stretch;gap:0}
+        .gx-menu > li{border-bottom:1px solid rgba(3,15,43,.08)}
+        .gx-menu a,.gx-menu button{width:100%;justify-content:space-between;padding:16px 0;font-size:1.05rem}
+        .gx-drop{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;background:transparent;padding:0 0 10px;min-width:0;display:none}
+        .gx-has.open .gx-drop{display:block}
+        .gx-has:hover .gx-drop{display:none}.gx-has.open:hover .gx-drop{display:block}
+        .gx-nav .gx-cta{display:flex;justify-content:center;margin-top:18px}
+      }
+      @media (min-width:981px){
+        .gx-h nav.gx-nav{display:block!important}
+        .gx-nav .gx-cta{display:none}
+      }
+      .gx-right{display:flex;align-items:center;gap:12px}
+      /* FOOTER */
+      .gx-f{background:var(--gx-base);color:rgba(244,243,239,.72);padding:clamp(56px,7vw,88px) 0 28px}
+      .gx-fgrid{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:clamp(24px,4vw,48px)}
+      .gx-fbrand img{height:46px!important;width:auto!important;max-width:none}
+      .gx-fbrand p{margin:18px 0 0!important;font-size:.95rem;line-height:1.55;max-width:28ch;color:rgba(244,243,239,.72)}
+      .gx-fbrand .gx-cta{margin-top:22px}
+      .gx-f h4{font:600 .78rem/1.2 "Poppins",system-ui,sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:var(--gx-lima)!important;margin:6px 0 16px!important}
+      .gx-f li{margin:0 0 10px!important}
+      .gx-f li a{color:rgba(244,243,239,.78)!important;font-size:.92rem;line-height:1.4}
+      .gx-f li a:hover{color:#fff!important}
+      .gx-fbot{margin-top:clamp(40px,5vw,64px);padding-top:22px;border-top:1px solid rgba(244,243,239,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.85rem}
+      .gx-fbot a{color:rgba(244,243,239,.78)!important}
+      @media (max-width:980px){.gx-fgrid{grid-template-columns:1fr 1fr}.gx-fbrand{grid-column:1 / -1}}
+      @media (max-width:520px){.gx-fgrid{grid-template-columns:1fr}}
+      @media (prefers-reduced-motion:reduce){.gx-h *,.gx-f *{transition:none!important}}
+    </style><!-- Organization & Page JSON-LD Schema --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","MarketingAgency","ProfessionalService"],"@id":"https://grovi-studio.com/#organization","name":"Grovi Studio","alternateName":["grovi-studio.com","Grovi","C² Growth Studio by Grovi"],"url":"https://grovi-studio.com/","logo":{"@type":"ImageObject","@id":"https://grovi-studio.com/#logo","url":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-logo-principal-150x150.png","contentUrl":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-logo-principal-150x150.png","caption":"Grovi Studio","inLanguage":"es-CO"},"image":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-logo-principal.png","description":"Agencia de Growth Marketing B2B, SEO Técnico, Paid Media, Analítica de Datos (BI) y Automatización con IA para e-commerce y negocios de alto ticket en Latinoamérica y Estados Unidos.","email":"hola@grovi-studio.com","telephone":"+573103235087","priceRange":"$$$","areaServed":[{"@type":"Country","name":"Colombia"},{"@type":"Country","name":"México"},{"@type":"Country","name":"Estados Unidos"},{"@type":"Country","name":"Chile"},{"@type":"Country","name":"Perú"},{"@type":"Country","name":"Argentina"}],"knowsAbout":["Growth Marketing B2B","Search Engine Optimization (SEO)","Generative Engine Optimization (GEO / AEO)","Paid Media (Google Ads, Meta Ads, LinkedIn Ads)","Data Analytics, Looker Studio & Google BigQuery","Server-Side Tracking & Meta Conversions API (CAPI)","AI Agents & Marketing Automation (n8n, Make, WhatsApp Business API)"],"sameAs":["https://www.linkedin.com/company/grovi-studio/"]},{"@type":"WebSite","@id":"https://grovi-studio.com/#website","url":"https://grovi-studio.com/","name":"Grovi Studio","alternateName":"grovi-studio.com","description":"Agencia de Growth para e-commerce B2B en salud, legal y servicios de alto ticket","publisher":{"@id":"https://grovi-studio.com/#organization"},"inLanguage":"es-CO"},{"@type":"ImageObject","@id":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul.png","url":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul.png","contentUrl":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul.png","width":"1059","height":"556","caption":"Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket","inLanguage":"es-CO"},{"@type":"BreadcrumbList","@id":"https://grovi-studio.com/lead-scoring-no-code-consultas-legales/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://grovi-studio.com/"},{"@type":"ListItem","position":2,"name":"Automatización","item":"https://grovi-studio.com/category/automatizacion/"},{"@type":"ListItem","position":3,"name":"Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket","item":"https://grovi-studio.com/lead-scoring-no-code-consultas-legales/"}]},{"@type":"WebPage","@id":"https://grovi-studio.com/lead-scoring-no-code-consultas-legales/#webpage","url":"https://grovi-studio.com/lead-scoring-no-code-consultas-legales/","name":"Lead scoring no-code para consultas legales de alto ticket","description":"Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket... Estrategias de Growth Marketing B2B por Grovi Studio.","datePublished":"2026-08-29T19:19:51+00:00","dateModified":"2026-09-28T13:30:57+00:00","about":{"@id":"https://grovi-studio.com/#organization"},"isPartOf":{"@id":"https://grovi-studio.com/#website"},"primaryImageOfPage":{"@id":"https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-azul.png"},"breadcrumb":{"@id":"https://grovi-studio.com/lead-scoring-no-code-consultas-legales/#breadcrumb"},"inLanguage":"es-CO"},{"@type":"Person","@id":"https://grovi-studio.com/author/cesarjimenezarciagmail-com/","name":"César Jiménez","url":"https://grovi-studio.com/author/cesarjimenezarciagmail-com/","sameAs":["https://www.linkedin.com/in/cesarjimenezarcia/"],"worksFor":{"@id":"https://grovi-studio.com/#organization"}}]}</script></head> <body itemtype="https://schema.org/Blog" itemscope="itemscope" class="wp-singular post-template-default single single-post postid-223 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-astra ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.14.0 group-blog ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-387"> <script>
+      (function () {
+        var mq = window.matchMedia('(max-width:921.99px)');
+        function apply(isMobile) {
+          var b = document.body.classList;
+          if (isMobile) {
+            b.add('ast-header-break-point');
+            b.remove('ast-desktop');
+          } else {
+            b.remove('ast-header-break-point');
+            b.add('ast-desktop');
+          }
+        }
+        apply(mq.matches);
+        if (mq.addEventListener) {
+          mq.addEventListener('change', function (e) {
+            apply(e.matches);
+          });
+        }
+      })();
+    </script> <!-- Grovi Global Header --> <header class="gx-h" id="gx-header"> <div class="gx-wrap gx-bar"> <a class="gx-logo" href="/" aria-label="Grovi Studio, inicio"> <img src="https://grovi-studio.com/wp-content/uploads/2026/09/grovi-studio-agencia-growth-marketing-analitica-automatizacion.png" alt="Grovi Studio" width="892" height="330"> </a> <nav class="gx-nav" id="gx-nav" aria-label="Principal"> <ul class="gx-menu"> <li class="gx-has"> <button type="button" aria-expanded="false" aria-controls="gx-drop-servicios">
+Servicios
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="m6 9 6 6 6-6"></path> </svg> </button> <div class="gx-drop" id="gx-drop-servicios"> <a href="/agencia-marketing-digital/"> <i style="background:#2151f2"> <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"> <path d="M3 15l5-5 3 3 6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </i> <span> <b>Agencia de Marketing Digital</b> <small>Pauta, conversión y adquisición</small> </span> </a> <a href="/agencia-seo/"> <i style="background:#cae664"> <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"> <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="#030f2b" stroke-width="2.4"></circle> <path d="M13 13l4 4" stroke="#030f2b" stroke-width="2.6" stroke-linecap="round"></path> </svg> </i> <span> <b>Agencia SEO</b> <small>Posicionamiento orgánico y auditoría técnica</small> </span> </a> <a href="/analisis-de-datos/"> <i style="background:#ab95f4"> <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"> <rect x="3" y="10" width="3.5" height="7" rx="1.2" fill="#030f2b"></rect> <rect x="8.3" y="6" width="3.5" height="11" rx="1.2" fill="#030f2b"></rect> <rect x="13.6" y="3" width="3.5" height="14" rx="1.2" fill="#030f2b"></rect> </svg> </i> <span> <b>Análisis de datos</b> <small>Dashboards, BI y tracking</small> </span> </a> <a href="/agencia-marketing-digital/ecommerce/"> <i style="background:#030f2b"> <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"> <path d="M6.5 7V6a3.5 3.5 0 0 1 7 0v1" fill="none" stroke="#cae664" stroke-width="2" stroke-linecap="round"></path> <path d="M3.5 7h13l-1 9.5a1.5 1.5 0 0 1-1.5 1.5H6a1.5 1.5 0 0 1-1.5-1.5z" fill="#ab95f4"></path> </svg> </i> <span> <b>E-commerce Growth</b> <small>Tiendas online que venden más</small> </span> </a> </div> </li> <li><a href="/portafolio/">Casos</a></li> <li><a href="/#metodologia">Metodología</a></li> <li><a href="/#nosotros">Nosotros</a></li> <li><a href="/blog/">Blog</a></li> </ul> <a class="gx-cta" href="/contacto/">Agenda aquí <span aria-hidden="true">→</span></a> </nav> <div class="gx-right"> <a class="gx-cta" href="/contacto/">Agenda aquí <span aria-hidden="true">→</span></a> <button class="gx-burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="gx-nav"> <span></span> </button> </div> </div> </header> <div class="hfeed site" id="page"> <div id="content" class="site-content"> <div class="ast-container"> <div id="primary" class="content-area primary"> <main id="main" class="site-main">  <article class="post-223 post type-post status-publish format-standard has-post-thumbnail hentry ast-article-single" id="post-223" itemtype="https://schema.org/CreativeWork" itemscope="itemscope"> <div class="ast-post-format- single-layout-1"> <header class="entry-header"> <div class="entry-meta">
+Por  <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author"> <a href="/blog/" rel="author" class="url fn n" itemprop="url"> <span class="author-name" itemprop="name">César Jiménez</span> </a> </span> 
+/  <span class="posted-on"> <span class="published" itemprop="datePublished">   agosto 29, 2026  </span> </span> </div> </header> <div class="entry-content clear" itemprop="text"><p><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket",
+      "description": "Descubre cómo optimizar Cómo implementar Lead Scoring no-code para calific con estrategias de Growth Marketing, analítica y automatización por Grovi Studio.",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Person",
+        "name": "César Jiménez"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Grovi Studio",
+        "url": "https://grovi-studio.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo ayuda esta estrategia en Cómo implementar Lead Scoring ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Permite estructurar un canal de adquisición predecible impulsado por datos, optimización continua y automatizaciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué resultados se pueden esperar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mayor cualificación de leads, reducción del costo de adquisición (CAC) y mejora en la tasa de conversión."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></p>
+<h1 style="max-width:800px;margin:32px auto 0;padding:0 0 8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:clamp(1.7rem,1.1rem + 2.2vw,2.5rem);font-weight:800;line-height:1.2;color:#0D1B3E;letter-spacing:-0.01em;">Cómo implementar Lead Scoring no-code para calificar consultas legales de alto ticket</h1>
+<div class="summary-box" style="background:#FFF7ED;border-left:4px solid #EA580C;padding:20px 24px;border-radius:0 12px 12px 0;margin:28px 0;">
+  <strong style="color:#9A3412;font-size:1rem;">📌 Resumen Ejecutivo / Puntos Clave:</strong></p>
+<ul style="margin:10px 0 0;padding-left:20px;color:#7C2D12;font-size:0.95rem;line-height:1.6;">
+<li>1. Pasos del Lead Scoring Legal</li>
+</ul>
+</div>
+<style>.ast-container:has(> #primary){flex-wrap:wrap !important}.ast-container:has(> #primary) > #primary,.ast-container:has(> #primary) > .navigation.post-navigation{flex:1 1 100% !important;width:100% !important;max-width:100% !important}</style>
+<style>
+.grovi-blog-post {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1A2332;
+    line-height: 1.7;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.grovi-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0D1B3E;
+    font-weight: 500;
+    background-color: #F8FAFF;
+    border-left: 4px solid #10D9A0;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 35px;
+}
+.grovi-blog-post h2 {
+    color: #0D1B3E;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 8px;
+}
+.grovi-blog-post h3 {
+    color: #1a3561;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.grovi-blog-post p {
+    margin-bottom: 20px;
+    color: #334155;
+}
+.grovi-blog-post ul, .grovi-blog-post ol {
+    margin-bottom: 24px;
+    padding-left: 20px;
+    color: #334155;
+}
+.grovi-blog-post li {
+    margin-bottom: 8px;
+}
+.grovi-blog-post strong {
+    color: #0D1B3E;
+}
+.grovi-graphic-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 25px 0;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+}
+.grovi-tools-box {
+    background-color: #F8FAFF;
+    border: 1px solid #E2E8F0;
+    padding: 22px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+.grovi-tools-box h4 {
+    margin-top: 0;
+    color: #0D1B3E;
+    font-size: 17px;
+    font-weight: 700;
+}
+.grovi-faq-section {
+    background-color: #F1F5F9;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+.grovi-faq-section h3 {
+    margin-top: 0;
+    color: #0D1B3E;
+    border-bottom: 2px solid #CBD5E1;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.grovi-faq-item {
+    margin-bottom: 20px;
+}
+.grovi-faq-item:last-child {
+    margin-bottom: 0;
+}
+.grovi-faq-question {
+    font-weight: 700;
+    color: #0D1B3E;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+.grovi-faq-answer {
+    color: #475569;
+    font-size: 15px;
+    margin: 0;
+}
+.grovi-author-bio {
+    background: #F8FAFF;
+    border: 1px solid #E2E8F0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.grovi-comments-prompt {
+    background: #FFFDF5;
+    border: 1px solid #FDE047;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.grovi-cta-card {
+    background: linear-gradient(135deg, #0D1B3E 0%, #1a3561 100%);
+    color: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 45px 0;
+}
+.grovi-cta-card h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+}
+.grovi-cta-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.grovi-cta-card a {
+    display: inline-block;
+    background: #10D9A0;
+    color: #0D1B3E;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.grovi-cta-card a:hover {
+    background: #0ebc8a;
+}
+.grovi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.grovi-table th {
+    background-color: #F1F5F9;
+    color: #0D1B3E;
+    text-align: left;
+    padding: 12px;
+    font-weight: 700;
+    border-bottom: 2px solid #E2E8F0;
+}
+.grovi-table td {
+    padding: 12px;
+    border-bottom: 1px solid #E2E8F0;
+    color: #475569;
+}
+</style>
+<div class="grovi-blog-post">
+<div class="grovi-lead-paragraph"><strong>Resumen:</strong> Conoce la metodología para calificar consultas legales de forma automática y asignar puntuación (Lead Scoring) en tu CRM usando n8n, filtrando contactos sin presupuesto.</div>
+<p><svg class="grovi-graphic-banner" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#0D1B3E;">
+  <rect width="800" height="200" rx="8" fill="#0D1B3E"/>
+  <path d="M100 150H200M150 150V50" stroke="#10D9A0" stroke-width="4"/>
+  <text x="400" y="110" fill="#fff" font-family="system-ui" font-size="18" font-weight="700">Funnel Legal / Prospección</text>
+</svg></p>
+<p>El tiempo de los socios de un bufete de abogados es su activo más valioso. Filtrar consultas telefónicas irrelevantes ahorra decenas de horas al mes que pueden facturarse a clientes reales.</p>
+<h2>1. Pasos del Lead Scoring Legal</h2>
+<ul>
+<li>Pregunta la facturación de la empresa y la materia de la consulta en tu formulario.</li>
+<li>Asigna puntos de forma interna con n8n según las respuestas.</li>
+<li>Notifica a tu equipo de ventas solo si el prospecto supera la puntuación calificada.</li>
+</ul>
+<div class="grovi-comments-prompt">
+<h4 style="margin-top:0; color:#854D0E; font-size:17px; font-weight:700;">💬 ¡Comparte tu opinión!</h4>
+<p style="margin-bottom:0; color:#713F12; font-size:15px;">¿Qué opinas sobre estas estrategias aplicadas a tu sector? Déjanos tus preguntas y te responderemos personalmente.</p>
+</div>
+<div class="grovi-author-bio" style="background:#F8FAFF; border:1px solid #E2E8F0; padding:20px; border-radius:8px; margin-top:40px; display:flex; gap:16px; align-items:center;">
+    <img decoding="async" src="https://grovi-studio.com/wp-content/uploads/2026/08/grovi-team-cesar-jimenez-300x300.webp" style="width:65px; height:65px; border-radius:50%; object-fit:cover; flex-shrink:0; border: 2px solid #10D9A0;" alt="César Jiménez A."></p>
+<div>
+<div style="font-weight:700; color:#0D1B3E; font-size:16px;">Escrito por César Jiménez A.</div>
+<div style="font-size:13px; color:#64748B; margin-top:2px;">Especialista en Growth Marketing, Analítica de Datos y Automatización Comercial. Fundador de Grovi Studio, cuenta con más de 8 años de experiencia liderando la digitalización y el escalamiento de marcas en sectores de alto ticket en Latinoamérica.</div>
+</p></div>
+</div>
+</div>
+<div class="grovi-cta-card">
+<h4>¿Tus socios pierden tiempo en reuniones comerciales sin valor?</h4>
+<p>Implementamos sistemas no-code de calificación de leads adaptados a tu práctica jurídica.</p>
+<p><a href="/contacto/">Agenda tu Diagnóstico</a></div>
+</div>
+<div class="author-card" style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:24px;margin:40px 0;display:flex;gap:20px;align-items:center;box-shadow:0 2px 12px rgba(15,23,42,0.04);">
+<div style="width:64px;height:64px;border-radius:50%;background:#0D1B3E;color:#10D9A0;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;flex-shrink:0;">CJ</div>
+<div>
+<h4 style="margin:0 0 4px;font-size:1.1rem;color:#0F172A;font-weight:700;">Escrito por César Jiménez</h4>
+<p style="margin:0 0 6px;font-size:0.85rem;color:#ea580c;font-weight:600;">Cofundador de Grovi Studio · Estratega Digital, Analítica &#038; Finanzas de Growth</p>
+<p style="margin:0;font-size:0.9rem;color:#475569;line-height:1.5;">Especialista en analítica de datos, arquitectura de marca y modelos financieros de adquisición. Aplica la metodología C² para escalar negocios con datos reales.</p>
+</p></div>
+</div>
+</div> </div> </article> <nav class="navigation post-navigation" aria-label="Posts"> <div class="nav-links"> <div class="nav-previous"> <a title="LinkedIn Lead Gen Forms para Firmas de Abogados de Comercio Exterior" href="/linkedin-lead-gen-abogados-comercio-exterior/" rel="prev"> <span class="ast-post-nav" aria-hidden="true">← Anterior</span> <p>LinkedIn Lead Gen Forms para Firmas de Abogados de Comercio Exterior</p> </a> </div> <div class="nav-next"> <a title="Growth Marketing para Consultores Agrónomos: Cómo vender asesoría técnica digitalmente" href="/growth-marketing-consultores-agronomos-latam/" rel="next"> <span class="ast-post-nav" aria-hidden="true">Siguiente →</span> <p>Growth Marketing para Consultores Agrónomos: Cómo vender asesoría técnica digitalmente</p> </a> </div> </div> </nav> </main> </div> </div> </div> </div> <!-- Grovi Global Footer --> <footer class="gx-f" id="gx-footer"> <div class="gx-wrap"> <div class="gx-fgrid"> <div class="gx-fbrand"> <a href="/" aria-label="Grovi Studio, inicio"> <img src="https://grovi-studio.com/wp-content/uploads/2026/08/Grovi-negativo.png" alt="Grovi Studio" width="892" height="330"> </a> <p>Growth studio. Estrategia, creatividad y datos para hacer crecer tu negocio. Built together. Grown together.</p> <a class="gx-cta" href="/contacto/">Agenda tu Coffee Date <span aria-hidden="true">→</span></a> </div> <div> <h4>Marketing digital</h4> <ul> <li><a href="/agencia-marketing-digital/">Agencia de marketing digital</a></li> <li><a href="/agencia-marketing-digital/mexico/">México</a></li> <li><a href="/agencia-marketing-digital/estados-unidos/">Estados Unidos</a></li> <li><a href="/agencia-marketing-digital/chile/">Chile</a></li> <li><a href="/agencia-marketing-digital/peru/">Perú</a></li> <li><a href="/agencia-marketing-digital/argentina/">Argentina</a></li> <li><a href="/agencia-marketing-digital/ecommerce/">E-commerce Growth</a></li> </ul> </div> <div> <h4>Agencia SEO</h4> <ul> <li><a href="/agencia-seo/">Agencia SEO</a></li> <li><a href="/agencia-seo/mexico/">México</a></li> <li><a href="/agencia-seo/estados-unidos/">Estados Unidos</a></li> <li><a href="/agencia-seo/chile/">Chile</a></li> <li><a href="/agencia-seo/peru/">Perú</a></li> <li><a href="/agencia-seo/argentina/">Argentina</a></li> <li><a href="/agencia-marketing-digital/posicionamiento-web/">Posicionamiento web</a></li> </ul> </div> <div> <h4>Análisis y BI</h4> <ul> <li><a href="/analisis-de-datos/">Análisis de datos</a></li> <li><a href="/analisis-de-datos/#visualizadores">Power BI y Looker Studio</a></li> <li><a href="/analisis-de-datos/#cloud-databases">Bases de datos GCP y AWS</a></li> <li><a href="/analisis-de-datos/#pipelines-etl">Pipelines ETL y dbt</a></li> <li><a href="/analisis-de-datos/#activacion">Tracking server-side</a></li> </ul> </div> <div> <h4>Grovi</h4> <ul> <li><a href="/portafolio/">Casos de éxito</a></li> <li><a href="/#metodologia">Metodología</a></li> <li><a href="/blog/">Blog</a></li> <li><a href="/herramientas/">Herramientas gratuitas</a></li> <li><a href="/contacto/">Contacto</a></li> </ul> </div> </div> <div class="gx-fbot"> <span>© 2026 Grovi Studio · C² growth studio</span> <a href="/contacto/">Hablemos de tu negocio →</a> </div> </div> </footer> <script>
+      (function () {
+        var h = document.getElementById('gx-header');
+        if (!h) return;
+        var b = h.querySelector('.gx-burger');
+        if (b) {
+          b.addEventListener('click', function () {
+            var o = h.classList.toggle('open');
+            b.setAttribute('aria-expanded', o);
+            b.setAttribute('aria-label', o ? 'Cerrar menú' : 'Abrir menú');
+          });
+        }
+        [].forEach.call(h.querySelectorAll('.gx-has > button'), function (t) {
+          t.addEventListener('click', function () {
+            var li = t.parentNode,
+              o = li.classList.toggle('open');
+            t.setAttribute('aria-expanded', o);
+          });
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.gx-has')) {
+            [].forEach.call(h.querySelectorAll('.gx-has.open'), function (li) {
+              li.classList.remove('open');
+              li.firstElementChild.setAttribute('aria-expanded', 'false');
+            });
+          }
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            h.classList.remove('open');
+            if (b) b.setAttribute('aria-expanded', 'false');
+          }
+        });
+      })();
+    </script> </body> </html>
